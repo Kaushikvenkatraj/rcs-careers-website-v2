@@ -1,9 +1,7 @@
 from sqlalchemy import create_engine, text
 import os 
 
-db_connection_string = os.environ['DB_CONNECTION_STRING']
-
-engine = create_engine(db_connection_string)
+engine = create_engine("DB_COnnection-String")
 
 def load_jobs_from_db():
   with engine.connect() as conn:
