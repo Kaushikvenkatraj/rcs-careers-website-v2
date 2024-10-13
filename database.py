@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine, text
 import os 
 
-engine = create_engine("mysql+pymysql://kalki:KalkiLoading2025@database-1.c25fp4vtulci.us-east-1.rds.amazonaws.com/rcscareers?charset=utf8mb4")
+engine = create_engine("DB_COnnection-String")
 
 def load_jobs_from_db():
   with engine.connect() as conn:
