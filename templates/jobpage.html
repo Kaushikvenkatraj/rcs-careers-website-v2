@@ -18,17 +18,18 @@
       <h3>Salary</h3>
       <p>INR {{job.salary}}</p>
       <h3>Responsibilities</h3>
-      <ul>
-        {% for line in job.responsibilities.split("\n") %}
-         <li>{{line}}</li>
-        {% endfor %}
-      </ul>
+       <ul>
+         {% for line in job.responsibilities.split("\n") %}
+          <li>{{line}}</li>
+         {% endfor %}
+       </ul>
       <h3>Requirements</h3>
-      <ol>
-        {% for line in job.requirements.split("\n") %}
-         <li>{{line}}</li>
-        {% endfor %}
-      </ol>
+       <ol>
+         {% for line in job.requirements.split("\n") %}
+          <li>{{line}}</li>
+         {% endfor %}
+       </ol>
+       {% include 'application_form.html' %}
     </div>
     {% include 'footer.html' %}
   </body>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Application Submitted
+    </title>
+    {% include 'bootstrap.html' %}
+  </head>
+  <body>
+    {% include 'banner.html' %}
+      {% include 'nav.html' %}
+    <div class="container">
+        <h1 class="text-center mt-2 mb-4">
+            RCS Careers
+        </h1>
+
+        <p>Your application for <b>"{{job['title']}}"</b> at RCS has been submitted.</p>
+
+      <div>
+       <b>Full Name</b><br>
+         {{application['full_name']}}
+      </div>
+      <div>
+        <b>Email</b><br>
+         {{application['email']}}
+      </div>
+      <div>
+        <b>Linkedin URL</b><br>
+         {{application['linkedn_url']}}
+      </div>
+      <div>
+        <b>Education</b><br>
+         {{application['education']}}
+      </div>
+      <div>
+        <b>Work Experience</b><br>
+         {{application['work_exp']}}
+      </div>
+      <div>
+        <b>Resume URL</b><br>
+         {{application['resume_url']}}
+      </div>
+     {% include 'footer.html' %}
+    </div>
+  </body>
+</html>
